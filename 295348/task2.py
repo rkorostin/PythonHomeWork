@@ -21,7 +21,7 @@ else:
 """
 
 #Реализовываем функцию, которая будет принимать любое значение от пользователя для X, Y, Z
-def inputNumbersFromUser(x):
+def InputNumbersFromUser(x):
     list = [] # Пока пустой список
     listXYZ = ["X", "Y", "Z"] # Список из известных значений X, Y, Z
     for i in range(x): #Используем диапазон
@@ -29,13 +29,13 @@ def inputNumbersFromUser(x):
     return list # Получаем список из значений, которые ввел user
 
 #А теперь берём утверждение из задания и тупо переписываем каждую его часть
-def checkTrueStatement(x): # x - это список, который был получен из функции inputNumbersFromUser
+def CheckTrueStatement(x): # x - это список, который был получен из функции inputNumbersFromUser
     leftStatement = not (x[0] or x[1] or x[2]) # ¬(X ⋁ Y ⋁ Z)
     rightStatement = not x[0] and not x[1] and not x[2] # ¬X ⋀ ¬Y ⋀ ¬Z
     result = leftStatement == rightStatement # ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z
     return result
 
-if checkTrueStatement(inputNumbersFromUser(3)) == True: # а теперь осталось просто проверить верно ли утверждение или ложно
+if CheckTrueStatement(InputNumbersFromUser(3)) == True: # а теперь осталось просто проверить верно ли утверждение или ложно
     print("Утверждение истинно")
 else:
     print("Утверждение ложно")

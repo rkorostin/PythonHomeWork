@@ -14,16 +14,15 @@ def InputNumbers(inputTextFromUser):
             number = int(input(f"{inputTextFromUser}"))
             is_OK = True
         except ValueError:
-            print("Это не число!")
+            print("Ошибка. Требуется ввод целого числа")
     return number
 
-def checkNumber(num):
+def CheckNumber(num):
     if 6 <= num <= 7:
-        print(f'{num}', ' -> ', 'Да')
+        print(f'{num} -> Да')
     elif 0 < num < 6:
-        print(f'{num}', ' -> ', 'Нет')
+        print(f'{num} -> Нет')
     else:
-        print(f'{num}', ' - число вне пределов 7 дней')
+        print(f'{num} -> число вне пределов 7 дней')
 
-num = InputNumbers("\nВведите число: ")
-checkNumber(num)
+CheckNumber(InputNumbers("\nВведите число: "))
