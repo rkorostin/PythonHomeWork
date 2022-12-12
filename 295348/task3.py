@@ -12,13 +12,6 @@
 
 print('Поиск четверти плоскости или оси по заданным координатам')
 
-# def inputNumbersFromUser(x):
-#     list = []
-#     listXYZ = ["X", "Y"]
-#     for i in range(x):
-#         list.append(input(f'Введите значение {listXYZ[i]}: '))
-#     return list
-
 def InputСoordinateFromUser(x):
     list = [0] * x
     for i in range(x):
