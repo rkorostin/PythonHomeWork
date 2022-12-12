@@ -36,6 +36,6 @@ def CheckTrueStatement(x): # x - это список, который был по
     return result
 
 if CheckTrueStatement(InputNumbersFromUser(3)) == True: # а теперь осталось просто проверить верно ли утверждение или ложно
-    print("Утверждение истинно")
+    print('Утверждение истинно')
 else:
-    print("Утверждение ложно")
+    print('Утверждение ложно')
