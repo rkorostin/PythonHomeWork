@@ -14,7 +14,7 @@ def InputNumbers(inputTextFromUser):
             number = int(input(f"{inputTextFromUser}"))
             is_OK = True
         except ValueError:
-            print("Ошибка. Требуется ввод целого числа")
+            print('Ошибка. Требуется ввод целого числа')
     return number
 
 def CheckNumber(num):
