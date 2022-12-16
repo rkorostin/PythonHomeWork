@@ -21,7 +21,7 @@ def AlgorithmMixList(first_list):
 
 mixed_list = AlgorithmMixList(original_list)
 
-print("Перемешанный список по методу AlgorithmMixList : ")
+print("Перемешанный список по методу AlgorithmMixList: ")
 print(mixed_list)
 
 ####################### Через shuffle #######################
