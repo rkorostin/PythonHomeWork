@@ -10,22 +10,12 @@
 
 num = int(input("Введите число:"))
 
+dictionary = dict()
+
 i = 1
-array = []
 while i <= num:
-    subsequence = (1 + 1 / i) ** i
-    subsequence = float('{:.2f}'.format(subsequence))
-    # print(subsequence)
-    # array = [subsequence for i in range(num)]
-    array.append(subsequence)
+    subsequence = round((1 + 1 / i) ** i, 2)
+    dictionary[i] = subsequence
     i += 1
-print(array)
 
-dictionary = {}
-
-for i in range(num):
-    if i in dictionary:
-        dictionary[i] += 1
-    else:
-        dictionary[i] = 1
 print(dictionary)
