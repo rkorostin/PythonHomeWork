@@ -13,9 +13,12 @@ num = int(input("Введите число:"))
 dictionary = dict()
 
 i = 1
+summa = 0
 while i <= num:
     subsequence = round((1 + 1 / i) ** i, 2)
+    summa += subsequence
     dictionary[i] = subsequence
     i += 1
 
-print(dictionary)
+print(f"Для n={num} {dictionary}")
+print(f"Сумма {summa}")
