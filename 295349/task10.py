@@ -31,28 +31,3 @@ random.shuffle(copy_list)
 
 print("Перемешанный список по методу shuffle: ")
 print(copy_list)
-
-
-
-
-
-
-# list
-#
-# for i in list:
-#     list[i] += 1
-#
-# print(list)
-
-#
-# def Algorithm(list):
-#     for i in list:
-#         list[i] += 1
-#         # temp = list[len(list) - 1 - i]
-#         # list[len(list) - 1 - i] = list[i]
-#         # list[i] = temp
-#     return list
-#
-#
-# listSort = Algorithm(list)
-# print(list)
