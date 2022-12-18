@@ -18,11 +18,10 @@ for symbol in ['-', '.']:
 
 num_revers = num[::-1]  # Переворачиваем наоборот введённое значение
 
-num = float(num_revers)  # Преобразуем во float
-
+num = int(num_revers)  # Преобразуем в integer
 sumNumbers = 0
 while num > 0:  # Для подсчета суммы цифр в заданном числе берем операции деления и взятия остатка
     sumNumbers += num % 10
     num //= 10
 
-print(int(sumNumbers))
+print(sumNumbers)
