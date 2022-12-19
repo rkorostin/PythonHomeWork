@@ -16,9 +16,9 @@ for symbol in ['-', '.']:
     if symbol in num:
         num = num.replace(symbol, "")
 
-num_revers = num[::-1]  # Переворачиваем наоборот введённое значение
+#num_revers = num[::-1]  # Переворачиваем наоборот введённое значение
 
-num = int(num_revers)  # Преобразуем в integer
+num = int(num)  # Преобразуем в integer
 sumNumbers = 0
 while num > 0:  # Для подсчета суммы цифр в заданном числе берем операции деления и взятия остатка
     sumNumbers += num % 10
