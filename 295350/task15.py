@@ -16,7 +16,7 @@ k = int(input('Введите число: '))
 lst_fib = []
 
 if k == 0:
-    lst_fib = [1]
+    lst_fib = [0]
 
 # Для положительных
 a = 1
@@ -30,7 +30,7 @@ for i in range(k):
 #Для отрицательных
 a = 0
 b = 1
-for i in range(k+1):
+for i in range(k):
     lst_fib.insert(0, a) # Каждый раз вставляем значение "a" на позицию с индексом 0
     temp = a
     a = b
