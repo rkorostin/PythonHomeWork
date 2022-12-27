@@ -14,5 +14,3 @@ if n > 1:
     result.append(n)
 
 print(result)
-
-
