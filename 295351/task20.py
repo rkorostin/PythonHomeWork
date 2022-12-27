@@ -59,7 +59,7 @@ for i in result_dict.items():
             final_dict += " - " + str(abs(i[1])) + "x^" + str(abs(i[0]))
         elif i[1] > 0:
             final_dict += " + " + str(abs(i[1])) + "x^" + str(abs(i[0]))
-final_dict = final_dict.replace('x^1 ', 'x ').replace('x^0', '').replace(' 1x^', ' x')
+final_dict = final_dict.replace('x^1 ', 'x ').replace('x^0', '').replace(' 1x^', ' x') + ' = 0'
 
 print(final_dict) # 9x^4 + 14x^3 - 2x^2 + 7x + 13 = 0
 
